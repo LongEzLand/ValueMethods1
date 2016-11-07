@@ -20,9 +20,15 @@ public class ValueMethods1 {
        return result;
    }
    public static void main(String[]args){
-       double radius= distance(2.0, 2.5, 2.8, 4.2);
+       /*double radius= distance(2.0, 2.5, 2.8, 4.2);
        System.out.printf("radius is %.3f\n", radius);
        calculateArea(radius);
        System.out.printf("Circle area is %.3f", calculateArea(radius));
+       */
+       System.out.println(calculateArea(2.5,3.5,4.6,6.5));
+       System.out.print(calculateArea(5));
    }
+    public static double calculateArea(double xc, double yc, double xp, double yp){
+        return calculateArea(distance(xc, yc, xp, yp));
+    }
 }
